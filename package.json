@@ -1,6 +1,6 @@
 {
   "name": "dynavatar",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Random seeded image",
   "main": "dist/index.js",
   "devDependencies": {
