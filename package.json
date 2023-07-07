@@ -10,7 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate-type-declarations": "tsc --declaration --emitDeclarationOnly ./src/index.ts --outDir dist",
-    "build": "npm run generate-type-declarations && node scripts/build.mjs"
+    "build": "rm -rf ./dist && npm run generate-type-declarations && node scripts/build.mjs",
+    "prepare": "npm run build"
   },
   "files": [
     "dist",
