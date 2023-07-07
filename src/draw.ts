@@ -58,7 +58,7 @@ export function drawDynavatar(
     offset
   );
 
-  gl.viewport(0, 0, width * 2, height * 2);
+  gl.viewport(0, 0, width, height);
   gl.clearColor(0, 0, 0, 0);
   gl.clear(gl.COLOR_BUFFER_BIT);
 
