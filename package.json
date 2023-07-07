@@ -1,0 +1,41 @@
+{
+  "name": "dynavatar",
+  "version": "0.0.1",
+  "description": "Random seeded image",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "esbuild": "^0.18.11",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-type-declarations": "tsc --declaration --emitDeclarationOnly ./src/index.ts --outDir dist",
+    "build": "npm run generate-type-declarations && node scripts/build.mjs"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.esm.js",
+    "require": "./dist/index.cjs.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whiteand/dynavatar.git"
+  },
+  "keywords": [
+    "random",
+    "image",
+    "generator",
+    "seeded"
+  ],
+  "author": "andrewbeletskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whiteand/dynavatar/issues"
+  },
+  "homepage": "https://github.com/whiteand/dynavatar#readme"
+}
